@@ -13,5 +13,10 @@ public class App {
 
         System.out.println(feriados.checarFeriado("25/12/2023"));
         
+        List<Feriado> feriadosExistentes = feriados.getFeriados();
+
+        for(Feriado feriado : feriadosExistentes){
+            System.out.println(feriado.getNome());
+        }
     }
 }
